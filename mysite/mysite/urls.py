@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from main.views import HomePageView 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("main.urls")), # default path
+    path('', HomePageView.as_view(), name = 'home'), # default path
 ]
 
 # /home/start 
