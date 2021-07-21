@@ -17,3 +17,6 @@ class User(AbstractUser):
         return reverse(
             "users:detail", kwargs={"username": self.username}
         )
+
+
+
