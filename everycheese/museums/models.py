@@ -1,14 +1,6 @@
 from django.db import models
-from django.urls import reverse 
+from model_utils.models import TimeStampModel
 
-
-class Artifact(models.Model): 
-    name = models.CharField(max_length=100)
-    history = models.TextField()
-
-    def get_name(self): 
-        return self.name
-    def get_history(self): 
-        return self.history 
-    
+class Artifact(TimeStampedModel): 
+    name = models.Charfield("Name of Artifact", max_length = 200)
     
