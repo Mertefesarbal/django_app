@@ -4,7 +4,7 @@
 <h2>Artifact List</h2>
 <ul>
 {% for artifact in artifact_list %}
-<li><a href="#TODO">{{ artifact.name }}</a></li>
+<li><a href="{%url 'museums:detail artifact.slug%} ">{{ artifact.name }}</a></li>
 {% endfor %}
 </ul>
 {% endblock content %}
