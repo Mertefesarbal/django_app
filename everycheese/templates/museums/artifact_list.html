@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Artifact List{% endblock title %}
+{% block content %}
+<h2>Artifact List</h2>
+<ul>
+{% for artifact in artifact_list %}
+<li><a href="#TODO">{{ artifact.name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock content %}
