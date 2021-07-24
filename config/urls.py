@@ -7,6 +7,10 @@ from django.views import defaults as default_views
 
 urlpatterns = [
     path(
+        '',
+        TemplateView.as_view(template_name = 'index.html'), 
+    ), 
+    path(
         "",
         TemplateView.as_view(template_name="pages/home.html"),
         name="home",
