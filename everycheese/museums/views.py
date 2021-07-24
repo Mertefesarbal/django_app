@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic  import ListView, DetailView
+from django.views.generic  import ListView, DetailView, CreateView
 from .models import Artifact
 
 
@@ -12,3 +12,8 @@ class ArtifactListView(ListView):
 #pages:
 class ArtifactDetailView(DetailView):
     model = Artifact
+
+
+class ArtifactCreateView(CreateView): 
+    model = Artifact
+    fields = ['name', 'description', 'firmness']

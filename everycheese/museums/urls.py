@@ -9,8 +9,14 @@ urlpatterns = [
         name = 'list'
     ),
     path(
+        route = 'add/',
+        view = views.ArtifactCreateView.as_view(),
+        name = 'add'
+    ),
+    path(
         route = '<slug:slug>', 
         view = views.ArtifactDetailView.as_view(), 
         name = 'detail'
     ),
+
 ]
