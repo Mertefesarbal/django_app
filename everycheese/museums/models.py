@@ -1,12 +1,14 @@
 from django.db import models
 from autoslug import AutoSlugField
 from model_utils.models import TimeStampedModel
+from django.utils.crypto import get_random_string
 
 class Artifact(TimeStampedModel): 
     name = models.CharField("Name of Artifact", max_length = 200)
     slug = AutoSlugField("Artifact Address",
     unique=True, always_update=False, populate_from="name")
     description = models.TextField("Description", blank = True)
+    created_at = models.DateTimeField(auto_now_add = True)
 
     class Firmness(models.TextChoices):
         UNSPECIFIED = "unspecified", "Unspecified"
