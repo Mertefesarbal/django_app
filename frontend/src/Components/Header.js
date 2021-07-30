@@ -12,15 +12,14 @@ import '../styles/main.css';
 
 function Header() {
     return (
-        <header className = "">
+        <header class = "flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
             <div class = "flex flex-grow justify-evenly max-w-2xl">
                 <HeaderItem title = 'Home' Icon = {HomeIcon} />
                 <HeaderItem title = 'Search' Icon = {SearchIcon} />
-                <HeaderItem title = 'User' Icon = {UserIcon} />
+                <HeaderItem title = 'Account' Icon = {UserIcon} />
 
 
             </div>
-            <h1> This is the header </h1> 
         </header>
     )
 }
