@@ -28,7 +28,7 @@ urlpatterns = [
         include("everycheese.users.urls", namespace="users"),
     ),
     path("accounts/", include("allauth.urls")),
-   path('museums/', include('everycheese.museums.urls', namespace = 'museums')), 
+   path('artifacts/', include('everycheese.museums.urls', namespace = 'artifacts')), 
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

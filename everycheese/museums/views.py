@@ -6,19 +6,21 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 
-class ArtifactListView(ListView): 
-    model = Artifact
+class ArtifactView(APIView):
+    serializer_class = ArtifactSerializer
+    
+    def get(self, request): 
+        detail = [{"name": detail.name, "description": detail.description}
+        for detail in Artifact.objects.all()]
+        return Response(detail)
+    
+    def post(self, request): 
 
+        serializer = ArtifactSerializer(data = request.data)
+        if serializer.is_valid(raise_exception = True): 
+            serializer.save()
+            return Response(serializer.data)
+        
 
-
-#Now we have the view that will power each of the cheese detail
-#pages:
-class ArtifactDetailView(DetailView):
-    model = Artifact
-
-
-class ArtifactCreateView(APIView): 
-    def post(self, request, format=None): 
-        pass
 
 
