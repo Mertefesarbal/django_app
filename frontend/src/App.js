@@ -1,15 +1,22 @@
 import './App.css';
 import Navbar from "./Components/Navbar"; 
+import Header from "./Components/Header"; 
+import './styles/main.css'; 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
 
 function App() {
   return (
-    <Router>
-      <Navbar/>
+    <body class = "h-screen bg-gray-900">
+       <Router>
+      
       <Switch>
         <Route path= '/' />
       </Switch>
-    </Router>
+      <Header />
+      </Router>
+
+    </body>
+   
     
 
   );

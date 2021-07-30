@@ -3,13 +3,15 @@ import * as bsIcons from "react-icons/bs"; // bootstrap icons
 import {Link} from 'react-router-dom'; 
 import * as AiIcons from "react-icons/ai"; 
 import {SidebarData} from './SidebarData'; 
-import './Navbar.css'; 
+// import './Navbar.css'; 
+import '../styles/main.css'; 
+
 function Navbar() {
     const [sidebar, setSidebar] = useState(false); 
     const showSidebar = () => setSidebar(!sidebar); 
 
     return (
-        <div>
+        <div class ="">
             <div className = "navbar">
                 <Link to = "#" className = 'menu-bars'>
                     <bsIcons.BsJustify onClick = {showSidebar}/>
