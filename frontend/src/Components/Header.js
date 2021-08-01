@@ -14,9 +14,15 @@ function Header() {
     return (
         <header class = "flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
             <div class = "flex flex-grow justify-evenly max-w-2xl">
+<<<<<<< HEAD
                 <HeaderItem title = 'Home' Icon = {HomeIcon} />
                 <HeaderItem title = 'Search' Icon = {SearchIcon} />
                 <HeaderItem title = 'hakkımızda' Icon = {UserIcon} />
+=======
+                <HeaderItem title = 'Bestieee' Icon = {HomeIcon} />
+                <HeaderItem title = 'arama' Icon = {SearchIcon} />
+                <HeaderItem title = 'Account' Icon = {UserIcon} />
+>>>>>>> 1ef98b8ed2b5e6882bc38670534f56252aef7bc0
 
 
             </div>
