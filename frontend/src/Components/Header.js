@@ -16,7 +16,7 @@ function Header() {
             <div class = "flex flex-grow justify-evenly max-w-2xl">
                 <HeaderItem title = 'Home' Icon = {HomeIcon} />
                 <HeaderItem title = 'Search' Icon = {SearchIcon} />
-                <HeaderItem title = 'Account' Icon = {UserIcon} />
+                <HeaderItem title = 'hakkımızda' Icon = {UserIcon} />
 
 
             </div>
