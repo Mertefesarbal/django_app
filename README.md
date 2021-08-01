@@ -122,7 +122,7 @@ GRANT
 On Linux:
 
 ```bash
-sudo -u postgres dropdb -U postgres --if-exists everycheese
+sudo -u postgres dropdb -U postgres --if-exists museumX
 sudo -u postgres dropuser -U postgres --if-exists myuser
 ```
 
