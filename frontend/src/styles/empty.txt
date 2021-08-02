@@ -1,0 +1,10 @@
+   input (range)
+   
+   step='0.01'
+          className='range'
+          onChange={onChange}
+
+
+
+          <div className='progress-bar-cover'> </div>
+        <div className='thumb'> </div>

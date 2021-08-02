@@ -12,23 +12,20 @@ function AudioPlayer({ percentage = 0, onChange }) {
       setIsPlaying(!isPlaying); 
     }
   return (
-    <div className='slider-container'>
-      <div
-        className='progress-bar-cover'
-      ></div>
-      <div
-        className='thumb'
-      ></div>
-      <input
-        type='range'
-        step='0.01'
-        className='range'
-        onChange={onChange}
-      />
+    <div className = "audioPlayer">
+      
       <button onClick = {togglePlayPause}>
         {isPlaying ? <FaPause/> : <FaPlay/>}
       </button>
+
+      <div>
+        
+        <input type='range'/>
+    
+      </div>
+
     </div>
+    
   )
 }
 
